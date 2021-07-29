@@ -1,0 +1,11 @@
+version: "3.5"
+services:
+  application:
+    build: .
+    environment:
+      SEQUENCE: RDRU
+      MAP_SIZE: 4
+      ZOMBIE: (3,1)
+      PEOPLE: (0,1) (1,2) (1,1)
+
+    restart: on-failure
